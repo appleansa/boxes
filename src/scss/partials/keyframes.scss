@@ -1,0 +1,146 @@
+@-webkit-keyframes ring {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 0.4;
+            transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+            transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.4;
+            transform: scale(1);
+    }
+}
+
+@-moz-keyframes ring {
+     0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 0.6;
+            transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+            transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.4;
+            transform: scale(2);
+    }
+}
+
+@-o-keyframes ring {
+     0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 0.6;
+            transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+            transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.4;
+            transform: scale(2);
+    }
+}
+
+@keyframes ring {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    25% {
+        opacity: 0.6;
+            transform: scale(1.2);
+    }
+    50% {
+        opacity: 0.2;
+            transform: scale(1.5);
+    }
+    
+      75% {
+        opacity: 0;
+            transform: scale(1.7);
+    }
+    
+    100% {
+        opacity: 0;
+            transform: scale(1.9);
+    }
+}
+
+
+
+
+@keyframes movedown {
+    0% {
+         transform: translate(0, 0px);
+    }
+    
+     25% {
+          transform: translate(0, 4px);
+    }
+    
+    50% {
+          transform: translate(0, 2px);
+    }
+    
+    100% {
+        transform: translate(0, 0px);
+    }
+    
+}
+
+
+ 
+@keyframes slick-progress {   
+  0% {     
+    width: 0;  
+  }   
+  
+  100% {
+   width: 100%;
+   }
+}
+
+
+@-o-keyframes slick-progress {   
+  0% {     
+    width: 0;  
+  }   
+  
+  100% {
+   width: 100%;
+   }
+}
+
+@-moz-keyframes slick-progress {   
+  0% {     
+    width: 0;  
+  }   
+  
+  100% {
+   width: 100%;
+   }
+}
+
+@-webkit-keyframes slick-progress {   
+  0% {     
+    width: 0;  
+  }   
+  
+  100% {
+   width: 100%;
+   }
+}
