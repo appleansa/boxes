@@ -56,7 +56,10 @@ $('.j-navi-close').click(function() {
 
 
 
-  autocomplete(document.getElementById("city"), countries);
+  
+  if ($("#city").length ) {
+    autocomplete(document.getElementById("city"), countries);
+  }
 
 
 

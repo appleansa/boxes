@@ -15,11 +15,84 @@
 </head>
 
 <body>
-   
-    
 
 
-    <div class="shadow"></div>
+    <style>
+        .preset {
+            padding: 120px 0;
+        }
+
+        .preset .box { margin-bottom: 40px; }
+    </style>
+     
+ 
+    <section class="preset">
+        <div class="c1140">
+             <div class="fly-labels-form fly-labels">
+                        
+                          
+                        <div class="box">
+                                <label for="#">Input type text </label>
+                                <div class="field">
+                                <label for="email">Email</label>
+                                <input class="input" type="text" id="email" value="" name="email" autocomplete="nope">
+
+                            </div>
+                             <div class="field empty">
+                                <label for="email">Email</label>
+                                <input class="input" type="text" id="email" value="" name="email" autocomplete="nope">
+                                <span class="error">Заполните это поле.</span>
+                            </div>
+                            <div class="field focus invalid">
+                                <label for="email">Email</label>
+                                <input class="input" type="text" id="email" value="mail.mail" name="email" autocomplete="nope">
+                                   <span class="error">Некорректный E-mail адрес. Повторите попытку.</span>
+                            </div>
+                        </div>
+
+
+                        <div class="box">
+                            <label for="#">Input type  select</label>
+                            
+                                           <div class="field disabled">
+                                  <!--  <label for="count">Кол-во</label> -->
+                                    <select name="count" placeholder="Кол-во" class="select count input" id="select" disabled>
+                                        <option value="0">Отделение</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                    </select>
+                                </div>
+                           
+                        </div>
+
+
+
+
+                        <div class="box">
+                            
+                             <div class="field active autocomplete focus">
+                                <label for="city">Город</label>
+                                <input id="city0" type="text" class="input" name="city" value="test" autocomplete="nope">
+                            </div>
+
+                            <div class="field confirmed focus autocomplete">
+                                <label for="city">Город</label>
+                                <input id="city1" type="text" value="Gabon" class="input" name="city">
+                            </div>
+
+                            <div class="field active preload focus autocomplete">
+                                <label for="city">Город</label>
+                                <input id="city2" type="text" class="input" value="Хар" name="city" autocomplete="nope">
+                            </div>
+                        </div>
+                         
+                    </div>
+        </div>
+    </section>
+
+
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.2.0/jquery-migrate.min.js"></script>
@@ -27,6 +100,25 @@
     <script src="js/autocomplete.js"></script>
     <script src="js/script.js"></script>
     <!--.end scripts -->
+ 
+
+ <script>
+     
+       if ($("#city0").length ) {
+    autocomplete(document.getElementById("city0"), countries);
+  }
+
+    if ($("#city1").length ) {
+    autocomplete(document.getElementById("city1"), countries);
+  }
+
+    if ($("#city2").length ) {
+    autocomplete(document.getElementById("city2"), countries);
+  }
+
+ </script>
+
+
 </body>
 
 </html>
