@@ -175,7 +175,9 @@ p {
             float: right;
             position: relative;
             padding-left: 75px;
-            margin-top: 9px;
+            height: 67px;
+            display: flex;
+            align-items: center;
 
             &:before {
                 content: '';
@@ -194,6 +196,7 @@ p {
                 line-height: 25px;
                 text-align: right;
                 color: #8B8C9F;
+
             }
         }
     }
@@ -511,7 +514,7 @@ section {
             &:after {
                 content: '';
                 width: 40px;
-                height: 14px;
+                height: 10px;
                 font-family: 'Open Sans', sans-serif;
                 margin-left: 10px;
                 display: inline-block;
@@ -579,6 +582,18 @@ section {
             color: #E3BE38;
         }
     }
+}
+
+
+.price-total {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0px;
+    height: 44px;
+    line-height: 22px;
+    color: #F4A477;
+    border-bottom: 1px solid #8F8F8F;
+     
 }
 
 
@@ -902,15 +917,23 @@ position: relative;
 
     &-logo-container {
         float: left;
+        order: 1;
 
         .logo {
             margin-bottom: 18px;
         }
     }
 
+    &-top {
+        display: flex;
+        align-items: center;
+    }
+
     .phones {
+        order: 3;
         float: right;
         margin-top: 5px;
+        align-self: flex-start;
 
         a {
             font-weight: 600;
@@ -949,6 +972,7 @@ position: relative;
         &-box {
             max-width: 400px;
             margin: 0 auto;
+            order: 2;
         }
 
         li {
@@ -1035,6 +1059,11 @@ position: relative;
             background: #BFBFBF;
         }
 
+
+        &:hover:before, &:hover:after {
+            background: #686868;
+        }
+
         &:after {
             transform: rotate(-45deg);
         }
@@ -1097,6 +1126,7 @@ position: relative;
         font-size: 30px;
         line-height: 41px;
         color: #F4A477;
+        margin-bottom: 10px;
     }
 
     span.small {
@@ -1106,8 +1136,7 @@ position: relative;
     }
 
 }
-
-.preset {}
+ 
 
 @media screen and (max-width: 1280px) {
     .header {
@@ -1165,6 +1194,13 @@ position: relative;
 
         .navi-social {
             display: block;
+        }
+
+        &-navi {
+
+            .phones {
+                 height: auto;
+            }
         }
     }
 
@@ -1496,6 +1532,11 @@ position: relative;
             float: none;
             text-align: center;
             margin-bottom: 20px;
+        }
+
+
+        &-top {
+            display: block;
         }
 
         .phones {
