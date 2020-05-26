@@ -451,7 +451,7 @@ section {
     }
 }
 
-// .fly-labels-form {
+ 
 
 
 .field {
@@ -501,12 +501,25 @@ section {
     }
 
 
-    input[type="text"]:focus+label {
+    input[type="text"]:focus+label, input[type="number"]:focus+label {
         font-size: 14px;
         top: -10px;
         color: #F4A477;
 
     }
+
+    /* Для Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+/* Для Firefox */
+input[type=number]{
+  -moz-appearance: textfield;
+}
 
 
     .btn {
